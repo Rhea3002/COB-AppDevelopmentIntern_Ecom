@@ -7,7 +7,7 @@ import 'package:ecomm/features/auth/services/auth_service.dart';
 // import 'package:ecomm/features/seller/screens/seller_screen.dart';
 import 'package:ecomm/providers/user_provider.dart';
 import 'package:ecomm/route.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; 
 import 'package:provider/provider.dart';
 
 // import 'features/admin/screens/admin_screen.dart';
@@ -48,10 +48,12 @@ class _MyAppState extends State<MyApp> {
         onGenerateRoute: (settings) => generateRoute(settings),
         //   home: const AddCategory(),
         // );
-        home: Provider.of<UserProvider>(context).user.token.isNotEmpty
-            ? Provider.of<UserProvider>(context).user.type == 'user'
+        home: 
+        //Provider.of<UserProvider>(context).user.token.isNotEmpty
+             Provider.of<UserProvider>(context).user.type == 'user'
                 ?  BottomBar()
                 : const AdminBottomBar()
-            : const AuthScreen());
+            //: const AuthScreen()
+            );
   }
 }

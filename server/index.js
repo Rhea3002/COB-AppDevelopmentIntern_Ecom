@@ -14,7 +14,7 @@ const userRouter = require("./routes/user");
 //INIT
 const PORT = process.env.PORT || 3000;
 const app = express(); //same as initiallising main.dart
-const DB = "mongodb+srv://rhea:Mongo123@cluster0.6lfdkly.mongodb.net/?retryWrites=true&w=majority";
+const DB = "mongodb+srv://rhea:{PWD}@cluster0.6lfdkly.mongodb.net/?retryWrites=true&w=majority";
 
 //middleware
 app.use(express.json());

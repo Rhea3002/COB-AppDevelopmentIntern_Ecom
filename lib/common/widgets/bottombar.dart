@@ -2,7 +2,6 @@ import 'package:ecomm/features/cart/screens/cartscreen.dart';
 import 'package:ecomm/home/screens/homescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:ecomm/models/product.dart';
 import '../../constants/global_variables.dart';
 import '../../features/account/screens/account_screen.dart';
 import '../../features/search/screens/search_screen.dart';
